@@ -1,0 +1,85 @@
+{
+  "upstream": "TypeCellOS/BlockNote",
+  "tested_base": "e5e30798e4a74b55ed7c5158762027b5f30108a2",
+  "scope": "Final-source screenshots from official Linux browser setup: Chromium light desktop and WebKit dark narrow. All 18 focused browser cases pass across three engines. Whole native unit results use the additional independent encoded-asset-path fix. The full existing browser/exporter matrix was not run.",
+  "candidates": [
+    {
+      "key": "blocknote-assets",
+      "files": [
+        {
+          "path": "shared/util/fileUtil.ts",
+          "sha256": "d53b9c3558fbb005c3f1607588e653fdc1d3e8eace3f9d53e69a40beff65d8ee"
+        },
+        {
+          "path": "tests/src/unit/shared/fileUtil.test.ts",
+          "sha256": "2a466b800dff3c561ddc763fb9ac16c1cc4d5baeb1f8e3aa00d7ba773817394b"
+        }
+      ],
+      "patches": [
+        {
+          "name": "blocknote-encoded-asset-paths.patch",
+          "sha256": "3af8b1e16b410a3b9d3246a6ed5803e9a1305c35133a434d3e50187fb2b3183e"
+        }
+      ]
+    },
+    {
+      "key": "blocknote-keyboard",
+      "files": [
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/.bnexample.json",
+          "sha256": "5b01a2e7f2d374d1c8b5e013fd32ad31a3b69206fde6636bc86caeb22b150cbe"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/README.md",
+          "sha256": "08ab562e3241275b04f1f6d2d9da4df696bcb22114996323635d77b488da4391"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/index.html",
+          "sha256": "653af3d119e42f92261bb47ec4af9f178e2bb37142aad06851a6c41eb53e3d81"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/main.tsx",
+          "sha256": "66752dc7ec75664dc91500887ade6e6af804ff6789f243c93eea46aa6f66c6d9"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/package.json",
+          "sha256": "5ddeb36a3957f5a11b9b9dfd956a74fc6e80106de8fd1f1733cff995001d86c7"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/src/App.tsx",
+          "sha256": "344d27f6accf0abe0c2d057acd8b4cb7e050a516d5218eb668678023626be6fb"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/tsconfig.json",
+          "sha256": "cdfaeca18d4daae72a6d473886cc8f98225303fe8e5540149a81177dd14d4c6d"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/vite-env.d.ts",
+          "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+        },
+        {
+          "path": "examples/03-ui-components/21-keyboard-block-actions/vite.config.ts",
+          "sha256": "6e0cf5f15c176fb262a498ea1c32cbeb8f003e937c38d1b5e9ce134d670023b7"
+        },
+        {
+          "path": "playground/src/examples.gen.tsx",
+          "sha256": "a90bacb4efa10f76232e2326480a286bd1210f8ff0c42d4ca9feeff522769c6f"
+        },
+        {
+          "path": "pnpm-lock.yaml",
+          "sha256": "07e6c2ffc799541e202e87dd46c3155aabce28db84a5a212c105fda0735de4dd"
+        },
+        {
+          "path": "tests/src/end-to-end/keyboard-block-actions/keyboard-block-actions.test.tsx",
+          "sha256": "2de7a8d240948ec285cf9ea19908edf54321b9e1a729477dbc3072d3bbe8d9d6"
+        }
+      ],
+      "patches": [
+        {
+          "name": "blocknote-round3.patch",
+          "sha256": "41f99eab1c5ef8ae296572df736404b95293f36266ed0bc0173d4775e65db2df"
+        }
+      ]
+    }
+  ]
+}
